@@ -1,0 +1,31 @@
+-------==[ ARPLAY v0.1 ] ==-------
+
+I. Introduction:
+----------------
+
+ARPLAY is a small tool to play with the ARP protocol. You can perform a MITM, DoS and ARP Queries using it.
+It is based on arpspoof from dsniff tools and has been almost completely remade, to work with libnet 1.X, bringing some "cool" stuff and performances.
+
+II. How to compile it?
+----------------------
+You do not need to configure anything, just to compile it using your favourite compiler (by default GCC):
+ex: gcc arplay.c -o arplay -lnet -lpcap
+
+III. How to use it?
+-------------------
+Good question! If the helper does not help you, you have to read a little about this tool here.
+
+First and foremost, when you are using for the first time, you will find a little helper like this :
+==================================================+
+Usage: arpspoof [-s host] [-t target] interface
+
+Option: -f <Change MAC address source>
+==================================================+ 
+All you have to do, is to write the source's ip for "-s" and target's ip for "-t" options. Don't forget to precise which interface you would like to use for your injections.
+
+There is another option "-f", if you would like to perform a DoS or just forward traffic for another host.
+
+
+IV. Contacts
+-----------
+Sebastien Dudek (FlUxIuS@handgrep.se)
